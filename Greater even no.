@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num;
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    int start_even;
+    if (num % 2 == 0) {
+        start_even = num + 2;  
+    } else {
+        start_even = num + 1;  
+    }
+
+    cout << "Next 4 even numbers greater than " << num << " are:\n";
+    for (int i = 0; i < 4; ++i) {
+        cout << start_even + (i * 2) << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
