@@ -1,0 +1,12 @@
+#include <iostream> 
+using namespace std; 
+
+int main() 
+{
+    cout << "Suchanda" << "\n";
+    cout << "20 years" << "\n";
+    cout << "23BCY10199" << "\n";
+    cout << "suchanda.23bcy10299@vitbhopal.ac.in" << "\n";
+    cout << "Girls Hostel Block-2";
+    return 0;
+}
