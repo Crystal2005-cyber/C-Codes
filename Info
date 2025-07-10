@@ -1,10 +1,10 @@
 #include <iostream>
-#include <string> // Required for std::string
+#include <string> 
 using namespace std;
 
 class Person {
 public:
-    string name;  // use lowercase 'string', not 'String'
+    string name; 
     int age;
 
     void displayInfo() {
@@ -13,8 +13,8 @@ public:
     }
 };
 
-int main() {  // main must return int
-    Person p1;  // class name is 'Person', not 'person'
+int main() {  
+    Person p1;  
     p1.displayInfo();
-    return 0;   // main should return an integer
+    return 0;  
 }
