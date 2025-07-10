@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string> // Required for std::string
+using namespace std;
+
+class Person {
+public:
+    string name;  // use lowercase 'string', not 'String'
+    int age;
+
+    void displayInfo() {
+        cin >> name >> age;
+        cout << name << " " << age << endl;
+    }
+};
+
+int main() {  // main must return int
+    Person p1;  // class name is 'Person', not 'person'
+    p1.displayInfo();
+    return 0;   // main should return an integer
+}
