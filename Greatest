@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A = 100, B = 222, C = 33, D = 555;
+    int maxNum = A;
+
+    if (B > maxNum) maxNum = B;
+    if (C > maxNum) maxNum = C;
+    if (D > maxNum) maxNum = D;
+
+    cout << "The greatest number is: " << maxNum << endl;
+    return 0;
+}
