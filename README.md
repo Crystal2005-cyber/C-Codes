@@ -4,7 +4,7 @@ C++ is a powerful, general-purpose, and object-oriented programming language dev
 
 C++ supports OOP principles such as encapsulation, inheritance, polymorphism, and abstraction, which promote modularity, reusability, and maintainability of code.
 
-Some of the codes are :
+Some of the codes include the following queries :
 
 1. Write a simple C++ program to find the greatest among four given numbers.
 Example: int A=100, B=222, C=33, D=555. 
