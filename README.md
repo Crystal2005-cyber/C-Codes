@@ -19,7 +19,7 @@ Example: int A=100, B=222, C=33, D=555.
  
 5. Write a simple C++ program to calculate the sum, mean, median, and average value of an array.
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+________________________________________________________________________________________________________________
 
 1. Write a C++ Program to Find the sum of all the natural numbers from 1 to n.
 
