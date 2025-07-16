@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    int x;
+
+    void setY(int val) {
+        y = val;
+    }
+
+    int getY() {
+        return y;
+    }
+
+private:
+    int y;
+};
+
+int main() {
+    A a;
+    a.x = 10;
+    a.setY(50); 
+
+    cout << "x = " << a.x << ", y = " << a.getY() << endl;  
+
+    return 0;
+}
