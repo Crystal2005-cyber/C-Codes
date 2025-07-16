@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+char sub_code[3][10];
+char sub_name[3][20];
+int sub_ca_marks[3];
+
+int main()
+{
+    cout << "Your CA Marks";
+    cout << "\nEnter your sub_code, sub_name, sub_ca_marks:\n";
+
+    for (int i = 0; i < 3; i++)
+    {
+        cout << "Subject " << i + 1 << ":\n";
+        cin >> sub_code[i] >> sub_name[i] >> sub_ca_marks[i];
+    }
+
+    cout << "\nYour sub_code, sub_name, sub_ca_marks:\n";
+
+    for (int i = 0; i < 3; i++)
+    {
+        cout << sub_code[i] << " " << sub_name[i] << " " << sub_ca_marks[i] << endl;
+    }
+
+    return 0;
+}
