@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+class ATM {
+private:
+    int acc_no;
+    float balance;
+
+public:
+    // Inline function: Defined inside the class
+    void setAccount(int acc, float bal) {
+        acc_no = acc;
+        balance = bal;
+    }
+
+    // Inline function
+    void showBalance() {
+        cout << "Account Number: " << acc_no << ", Balance: " << balance << endl;
+    }
+
+    // Function declarations (outline)
+    void credit(float amount);  // Outline
+    void debit(float amount);   // Outline
+};
+
+// Outline function definitions (outside the class using scope resolution operator ::)
+void ATM::credit(float amount) {
+    balance += amount;
+    cout << "Credited: " << amount << endl;
+}
+
+void ATM::debit(float amount) {
+    if (amount <= balance) {
+        balance -= amount;
+        cout << "Debited: " << amount << endl;
+    } else {
+        cout << "Insufficient balance!" << endl;
+    }
+}
+
+// ----------- main function -----------
+int main() {
+    ATM a;
+
+    a.setAccount(1001, 1000);  // Inline function
+    a.credit(500);             // Outline function
+    a.debit(300);              // Outline function
+    a.showBalance();           // Inline function
+
+    return 0;
+}
